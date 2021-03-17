@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="side-menu">
+      <h1>ToDo</h1>
+      <div class="mytasks">
+        <div class="mytasks-h1">
+          <img src="assets/icons/to-do-list.png" alt="" />
+          <h1>My Tasks</h1>
+          <img src="assets/icons/upload.png" alt="" />
+        </div>
+
+        <ul>
+          <li class="active">
+            In Progress
+            <div class="active-tasks-amount">7</div>
+          </li>
+          <li class="completed">
+            Completed
+            <div class="completed-tasks-amount">7</div>
+          </li>
+          <li class="completed">
+            Trash
+            <div class="completed-tasks-amount">7</div>
+          </li>
+        </ul>
+      </div>
+      <div class="settings">
+        <img src="assets/icons/settings.png" alt="" />
+        Settings
+      </div>
+      <a href="log in.html">
+      <div class="log-out">
+        <img src="assets/icons/sign-out.png" alt="" />
+        Log Out
+      </div>
+      </a>
+    </div>
+    <div id="main-content">
+      <div class="main-content-top-bar">
+        <p>In Progress-<span>7</span></p>
+        <div class="search">
+          <input type="text" placeholder="Search" />
+          <img src="assets/icons/loupe.png" alt="" />
+        </div>
+        <div id="new-task-btn">
+          <img src="assets/icons/add.png" alt="" />
+          New Task
+        </div>
+      </div>
+      <div class="active-tasks">
+      </div>
+    </div>
+
+    <section id="add-task">
+        <input type="text" id="task-title" placeholder="Title"/>
+        <textarea name="description" placeholder="Description..."></textarea>
+        <div id="drag-drop">Drag & Drop or Tap To Choose</div>
+        <div class="addtask-btns">
+            <button id="cancel">Cancel</button>
+            <button id="save">Save</button>
+        </div>
+    </section>
+   
+  </body>
+</html>

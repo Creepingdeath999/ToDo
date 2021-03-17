@@ -1,0 +1,662 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
+#log-in {
+  width: 600px;
+  max-width: 90%;
+  margin: 50px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#log-in form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#log-in form .password-inpt {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#log-in form .password-inpt img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  right: 0px;
+  margin-left: -50px;
+  cursor: pointer;
+}
+
+#log-in form input {
+  outline: none;
+  border: none;
+  padding: 18px;
+  border-radius: 10px;
+  margin: 18px 0px;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  width: 100%;
+}
+
+#log-in form input:focus {
+  border: 1px solid  #98a9f0;
+}
+
+#log-in form .password-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#log-in form .password-actions input {
+  padding: 0;
+  margin: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#log-in form .password-actions label {
+  color: #909394;
+}
+
+#log-in form .password-actions a {
+  color: #909394;
+}
+
+#log-in form img {
+  width: 20px;
+}
+
+#log-in form .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0px;
+}
+
+#log-in form .buttons button {
+  outline: none;
+  border: none;
+  background-color: #5e77ed;
+  width: 450px;
+  height: 50px;
+  border-radius: 10px;
+  color: #fff;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+#log-in form .buttons button:hover {
+  border: 2px solid #98a9f0;
+  background-color: #f1f4f6;
+  color: #5e77ed;
+}
+
+#log-in form .buttons button:nth-child(2) {
+  background-color: #fff;
+  width: 200px;
+  height: 50px;
+  margin-left: 50px;
+  color: #5e77ed;
+}
+
+#log-in form .social-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#log-in form .social-btns div {
+  background-color: #5e77ed;
+  padding: 15px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition-duration: .4s;
+          transition-duration: .4s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#log-in form .social-btns div:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#log-in form .social-btns div img {
+  margin-right: 10px;
+}
+
+#log-in form .social-btns div:nth-child(2) {
+  margin-left: 5px;
+}
+
+/*signup page*/
+.signUp {
+  width: 600px;
+  max-width: 100%;
+  margin: 50px 100px;
+}
+
+.signUp .signUp-header h1 {
+  font-size: 2.7rem;
+  color: #5e77ed;
+  font-weight: 400;
+}
+
+.signUp .signUp-header p {
+  color: #616364;
+}
+
+.signUp .signUp-header p a {
+  text-decoration: underline;
+  color: #98a9f0;
+}
+
+.signUp form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signUp form .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signUp form .name input {
+  width: 48%;
+}
+
+.signUp form input {
+  outline: none;
+  border: none;
+  padding: 18px;
+  border-radius: 10px;
+  margin: 18px 0px;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  width: 100%;
+}
+
+.signUp form input:focus {
+  border: 1px solid  #98a9f0;
+}
+
+.signUp form button {
+  outline: none;
+  border: none;
+  background-color: #5e77ed;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  color: #fff;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  cursor: pointer;
+}
+
+.signUp form button:hover {
+  border: 2px solid #98a9f0;
+  background-color: #f1f4f6;
+  color: #000;
+}
+
+.signUp form .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signUp form .checkbox input {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.signUp form .checkbox p {
+  color: #616364;
+}
+
+.signUp form .checkbox p a {
+  color: #98a9f0;
+}
+
+#side-menu {
+  width: 400px;
+  height: 100vh;
+  padding: 30px 50px;
+}
+
+#side-menu img {
+  width: 40px;
+}
+
+#side-menu h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+#side-menu .mytasks {
+  margin-left: 50px;
+}
+
+#side-menu .mytasks .mytasks-h1 {
+  -webkit-transform: translateX(-70px);
+          transform: translateX(-70px);
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+#side-menu .mytasks .mytasks-h1 img {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+#side-menu .mytasks .mytasks-h1 img:nth-child(1) {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+#side-menu .mytasks .mytasks-h1 h1 {
+  font-size: 2em;
+}
+
+#side-menu .mytasks ul {
+  overflow: hidden;
+  -webkit-transition: height 2s;
+  transition: height 2s;
+}
+
+#side-menu .mytasks ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0px;
+  width: 72%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#side-menu .mytasks ul li div {
+  padding: 0px 10px;
+  border-radius: 10px;
+}
+
+#side-menu .settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6em;
+  cursor: pointer;
+  font-weight: 700;
+  margin: 150px 0px;
+}
+
+#side-menu .settings img {
+  margin-right: 20px;
+}
+
+#side-menu a {
+  color: #000;
+}
+
+#side-menu .log-out {
+  position: fixed;
+  cursor: pointer;
+  bottom: 30px;
+  font-size: 1.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#side-menu .log-out img {
+  margin-right: 20px;
+}
+
+/*main*/
+#main-content {
+  margin-top: 100px;
+  width: 900px;
+}
+
+#main-content .main-content-top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-content .main-content-top-bar p {
+  color: #909394;
+}
+
+#main-content .main-content-top-bar .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-content .main-content-top-bar .search img {
+  margin-left: -30px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+#main-content .main-content-top-bar .search input {
+  outline: none;
+  border: 1px solid #909394;
+  padding: 5px 20px;
+  width: 300px;
+  border-radius: 50px;
+}
+
+#main-content .main-content-top-bar div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #6179ef;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+#main-content .main-content-top-bar div:last-child img {
+  width: 20px;
+  color: #fff;
+  height: 20px;
+  margin-right: 5px;
+}
+
+#main-content .active-tasks::-webkit-scrollbar {
+  display: none;
+}
+
+#main-content .completed-tasks::-webkit-scrollbar {
+  display: none;
+}
+
+#main-content .active-tasks {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 300px;
+}
+
+#main-content .active-tasks .active-task {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px 0px;
+  cursor: pointer;
+  overflow-y: hidden;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 140px !important;
+  -webkit-box-shadow: 0px 0 0 0.1px #d3cece;
+          box-shadow: 0px 0 0 0.1px #d3cece;
+}
+
+#main-content .active-tasks .active-task .task-content p {
+  margin: 10px 0px;
+}
+
+#main-content .active-tasks .active-task .task-content .time span {
+  color: #909394;
+}
+
+#main-content .active-tasks .active-task .circle {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  border-radius: 50%;
+  border: 2px solid #ed7170;
+  margin-right: 30px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+#main-content #completed-tasks {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: slateblue;
+  border: 2px slateblue;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 300px;
+  min-height: 300px !important;
+}
+
+/*classes to toggle*/
+.active {
+  color: #2446ed !important;
+}
+
+.completed {
+  color: #909394  !important;
+}
+
+.active-tasks-amount {
+  background-color: #2446ed !important;
+  color: #fff;
+}
+
+.completed-tasks-amount {
+  background-color: #e7ebf0 !important;
+  color: #8fa0ef;
+}
+
+.mytasks-visible {
+  height: 0px !important;
+}
+
+.arrow-rotated {
+  -webkit-transform: rotateX(0deg) !important;
+          transform: rotateX(0deg) !important;
+}
+
+.show-content {
+  height: 140px !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f1f4f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*main page*/
+#add-task {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #f1f4f6;
+  padding: 20px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+#add-task input {
+  outline: none;
+  border: none;
+  width: 70%;
+  border: 1px solid #758bf0;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+
+#add-task textarea {
+  width: 70%;
+  height: 150px;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #758bf0;
+  border-radius: 10px;
+  outline: none;
+  resize: none;
+}
+
+#add-task #drag-drop {
+  border-style: dashed solid dashed solid;
+  padding: 10px 20px;
+  background-color: #f1f4f6;
+  border-color: #9c9e9f;
+  text-align: center;
+  color: #9c9e9f;
+  width: 70%;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+#add-task .addtask-btns {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#add-task .addtask-btns button {
+  outline: none;
+  border: none;
+  padding: 15px 40px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #758bf0;
+}
+
+#add-task .addtask-btns button:first-child {
+  background-color: #fff;
+  color: #758bf0;
+}
+
+.visible {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+/*# sourceMappingURL=style.css.map */
