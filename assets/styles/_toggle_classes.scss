@@ -1,0 +1,25 @@
+/*classes to toggle*/
+.active{
+    color: #2446ed !important;
+  }
+  .completed{
+    color:#909394  !important;
+  }
+  .active-tasks-amount{
+    background-color: #2446ed !important;
+    color:#fff
+  }
+  .completed-tasks-amount{
+    background-color: #e7ebf0 !important;
+    color:#8fa0ef;
+  }
+  .mytasks-visible{
+    height: 0px !important; 
+  }
+  .arrow-rotated{
+    transform: rotateX(0deg) !important;
+  }
+ .show-content{
+   height: 140px !important;
+ }
+ 
