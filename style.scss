@@ -3,6 +3,7 @@
 @import 'assets/styles/signup';
 @import 'assets/styles/main';
 @import 'assets/styles/toggle_classes';
+@import'assets/styles/addtask';
 * {
   margin: 0;
   padding: 0;
@@ -11,76 +12,13 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   background-color: #f1f4f6;
   display: flex;
 }
 
-/*main page*/
 
 
-
-#add-task{
-  width: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background-color: #f1f4f6;
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  display: none;
-  input{
-   outline: none;
-   border: none;
-   width: 70%;
-   border: 1px solid #758bf0;
-   padding: 15px;
-   border-radius:10px;
-   margin: 10px 0px;
-  }
-  textarea {
-    width: 70%;
-    height: 150px;
-    padding: 15px;
-    box-sizing: border-box;
-    border: 1px solid #758bf0;
-    border-radius: 10px;
-    outline: none;
-    resize: none;
-  }
-  #drag-drop{
-    border-style:dashed solid dashed solid;
-    padding: 10px 20px;
-    background-color: #f1f4f6;
-    border-color: #9c9e9f;
-    text-align: center;
-    color: #9c9e9f;
-    width: 70%;
-    margin: 20px 0px;
-    cursor: pointer;
-  }
-  .addtask-btns{
-    align-self: center;
-    button{
-      outline: none;
-      border: none;
-      padding: 15px 40px;
-      cursor: pointer;
-      color:#fff;
-      border-radius: 10px;
-      background-color: #758bf0;
-    }
-    button:first-child{
-      background-color: #fff;
-      color:#758bf0
-    }
-  }
-}
-
-.visible{
-  display: flex !important;
-}

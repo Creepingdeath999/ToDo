@@ -386,7 +386,7 @@
 
 /*main*/
 #main-content {
-  margin-top: 100px;
+  margin-top: 50px;
   width: 900px;
 }
 
@@ -509,21 +509,56 @@
   cursor: pointer;
 }
 
-#main-content #completed-tasks {
-  margin-top: 50px;
+#main-content .completed-tasks {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: slateblue;
-  border: 2px slateblue;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  height: 300px;
-  min-height: 300px !important;
+  overflow: scroll;
+  height: 250px;
+  min-height: 250px !important;
+}
+
+#main-content .completed-tasks .completed-task {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px 0px;
+  cursor: pointer;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 140px !important;
+  -webkit-box-shadow: 0px 0 0 0.1px #d3cece;
+          box-shadow: 0px 0 0 0.1px #d3cece;
+}
+
+#main-content .completed-tasks .completed-task .task-content p {
+  margin: 10px 0px;
+  text-decoration: line-through;
+}
+
+#main-content .completed-tasks .completed-task .task-content h1 {
+  text-decoration: line-through;
+}
+
+#main-content .completed-tasks .completed-task .task-content .time span {
+  color: #909394;
+}
+
+#main-content .completed-tasks .completed-task .circle {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  border-radius: 50%;
+  border: 2px solid springgreen;
+  margin-right: 30px;
+  margin-top: 5px;
+  cursor: pointer;
 }
 
 /*classes to toggle*/
@@ -558,24 +593,12 @@
   height: 140px !important;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+.visible {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
-body {
-  background-color: #f1f4f6;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-/*main page*/
 #add-task {
   width: 50%;
   position: absolute;
@@ -654,9 +677,20 @@ body {
   color: #758bf0;
 }
 
-.visible {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f1f4f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,7 +6,7 @@ const addTask=document.getElementById('add-task');
 const addTaskBtn=document.getElementById('save');
 const cancel=addTaskBtn.previousElementSibling;
 
-
+const completedTask=document.querySelector('.completed-tasks');
 let taskContainer=document.querySelector('.active-tasks');
 const titleInpt=document.getElementById('task-title');
 const descr=titleInpt.nextElementSibling;
@@ -45,12 +45,16 @@ function newTask(){
 }
 
 function getDate(){
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
     let current=new Date();
     let hr=current.getHours();
     let min=current.getMinutes();
 
+
     return `${hr}:${min}`;
 }
+
+/*event listeners*/
 
 addTaskBtn.addEventListener('click', newTask);
 newTaskBtn.addEventListener('click',()=>{
@@ -60,3 +64,33 @@ cancel.addEventListener('click', ()=>{
     addTask.classList.toggle('visible');
 });
 
+taskContainer.addEventListener('click', e=>{
+    let circle=e.target;
+    if(circle.classList[0]==="circle"){
+        let task=circle.parentElement;
+        task.classList.add('completed-task');
+        completedTask.append(task);
+    }
+});
+completedTask.addEventListener('click', e=>{
+    let circle=e.target;
+    if(circle.classList[0]==="circle"){
+        let task=circle.parentElement;
+ 
+       task.classList.add('active-task');
+        taskContainer.append(task);
+    
+    }
+})
+
+taskContainer.addEventListener('dblclick',e=>{
+    let task=e.target;
+        task.classList.add('completed-task');
+        completedTask.append(task);
+})
+
+completedTask.addEventListener('dblclick',e=>{
+    let task=e.target;
+        task.classList.add('active-task');
+        taskContainer.append(task);
+})
