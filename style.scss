@@ -1,24 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
-@import 'assets/styles/login';
-@import 'assets/styles/signup';
-@import 'assets/styles/main';
-@import 'assets/styles/toggle_classes';
-@import'assets/styles/addtask';
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
+@import "assets/styles/login";
+@import "assets/styles/signup";
+@import "assets/styles/main";
+@import "assets/styles/toggle_classes";
+@import "assets/styles/addtask";
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-body{
+body {
   background-color: #f1f4f6;
   display: flex;
 }
-
-
-
